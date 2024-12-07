@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+        <script>
+            //  function
+       function hello(){
+        document.write("hellos everybody")
+       }
+
+       function hii(){
+        document.write("hii everybody")
+       }
+
+       hello();
+       document.write("<br>");
+       hii();
+       document.write("<br>");
+       hello();
+        </script><br>
+        <script>
+            // function with parameters
+             function hello(fname = "priya", iname = "tanwar"){
+        document.write("hello " + fname + " " +  iname + "<br>");
+       }
+        function sum(a, b){
+            document.write(a + b);
+        }
+
+       hello("yahoo","baba");
+       hello();
+       sum(20.5,30);
+        </script>
+        <script>
+            // function with return velue
+
+            function fullname(fname = "tamanna", iname = "pappi"){
+                var a = fname + "-"  + iname;
+                return a;
+               
+            }
+             var fn = fullname("Ram", "kumar");
+             document.write(fn);
+            
+            //  sum
+             function sum(math,eng,sc){
+                    var s = math + eng + sc;
+                    return s;
+             }
+             var total = sum(55,65,75);
+             document.write(total);
+
+             document.write("<br>")
+            //  percentage
+             function percentage(tt){
+                var per = tt/300 * 100;
+                document.write(per)
+             }
+             var total = sum(80,80,80);
+             percentage(total);
+        </script>
+        <!-- global and local variables -->
+
+       <script>
+        var a = "yahoo baba";
+
+        function hello(){
+            document.write(a + "<br>");
+        }
+       hello();
+       document.write(a);
+       </script>
+       <!-- events -->
+        <br>
+        <script> 
+
+            function hello(){
+               alert("Hello everyone");
+            }
+            
+        </script>
+    </head>
+    <body onkeypress="hello()" >
+        <button onclick="hello()">Click Me </button>
+        <p ondblclick="hello()"> Click on double</p>
+        <p oncontextmenu="hello()"> Click on right</p>
+        <!-- <p onmouseenter="hello()"> Click on hover</p> -->
+        <!-- <p onmouseout="hello()"> Click on out</p> -->
+        <p onmousedown="hello()"> Click on down</p>
+        <p onmouseup="hello()"> Click on up</p>
+        <p onkeyup="hello()"> Click on key up</p>
+        <p onload="hello()"> Click on load</p>
+        <p onupload="hello()"> Click on upload</p>
+        <p onresize="hello()"> Click on resize</p>
+        <p onscroll="hello()"> Click on scroll</p>
+        
+    </body>
+</html>

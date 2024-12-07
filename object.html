@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title> JavaScript</title>
+      <script>
+      var a = {
+        fname : "Amarita",
+        lname : "Tanwar",
+        age : 16,
+        email : "amaritatanwar@gmail.com",
+        favMovies : ['Dhoom','Sholay','Hum'],
+        living : {
+            'city':'Chandigarh',
+            'country' : 'India',
+        },
+        salary : function(){
+            return 25000;
+        },
+        fullname : function(){
+            return this.fname + " " + this.lname;
+        }
+      }
+      document.write(a.living.city );
+      document.write(a.fullname());
+      document.write(a.salary());
+       document.write(a.fname);
+       console.log(a);
+
+      </script>
+    </head>
+</html>

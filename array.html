@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+            <script>
+               var ary = [10,20,30,40,50];
+                var sum = 0;
+                  document.write("<ul>");
+               for(var a = 0; a <= 4; a++){
+               document.write("<li>" + ary[a] + "</li>" );
+               sum = sum + ary[a];
+            }  
+            document.write("</ul>")
+            document.write("total sum: " + sum);
+            </script>
+            <!-- array ii -->
+             <script>
+                var ary = new Array();
+                ary[0] = 10;
+                ary[1] = true;
+                ary[3] = "harry";
+                  document.write("<ul>");
+               for(var a = 0; a < 5; a++){
+               document.write("<li>" + ary[a] + "</li>" );
+            }  
+            document.write("</ul>")
+             </script>
+             <script>
+                var ary = new Array();
+                
+                for(var g = 0; g < 3; g++){
+               //   ary[g] = prompt("enter the value");
+                }
+                  document.write("<ul>");
+               for(var a = 0; a < 3; a++){
+               document.write("<li>" + ary[a] + "</li>" );
+            }  
+            document.write("</ul>")
+             </script>
+             <!-- multidimensional array -->
+              <script>
+               var ary = [
+                  ["Harry",18,"Male","B.Com"],
+                  ["sunny",19,"Male","BCA"],
+                  ["sarah",18,"feMale","BCA"],
+                  ["Tom",17,"Male","B.A"]
+              ];
+
+            //   document.write(ary[0][3]);
+            document.write(ary.length);
+            document.write("<table border='1px' cellspacing ='0'>");
+               for(var a = 0; a < ary.length; a++){
+                  document.write("<tr>");
+              for(var b = 0; b < ary[a].length; b++) {
+                  document.write("<td>" + ary[a][b] + "</td>"); 
+                }
+                document.write("</tr>")
+               }
+               document.write("</table>")
+              </script>
+              <!-- modify and remove array  -->
+               <script>
+                var a = ["Harry",18,"Male","BCA"];
+                document.write(a + "<br>");
+                a[1] = 19;
+                document.write(a + "<br>");
+               delete a[2];
+               document.write(a + "<br>");
+
+               document.write(a[2] + "<br><br>")
+               </script>
+               <!-- array methods -->
+                <script>
+                  var a = ["sanjay","aman","rehman","karan"];
+                  document.write(a + "<br><br");
+                  a.sort();
+                  document.write(a + "<br><br>");
+                  a.reverse();
+                  document.write(a + "<br><br>");
+                  a.pop();
+                  document.write(a + "<br><br>");
+                  a.push("rahul");
+                  document.write(a + "<br><br>");
+                  a.push("aniket");
+                  document.write(a + "<br><br>");
+                  a.shift("");
+                  document.write(a + "<br><br>");
+                  a.unshift("govind");
+                  document.write(a + "<br><br><br>");
+                </script>
+                <!-- concat and join methods -->
+                 <script>
+                  var a = ["sanjay","aman","rehman"];
+
+                  // var b = a.concat("kamal","ravi")
+                  var  b = ["golu","ram"]
+                  var d = ["rohan","sohan",""]
+                  var c  = a.concat(b,d)
+                  document.write(c + "<br><br>");
+                  var e = c.join(" -<br> ");
+                  document.write(e);
+                 </script>
+                 <!-- slice and splice -->
+                  <script>
+                 var a = ["sanjay","aman","rehman","rahul","karan"];
+
+                  //  document.write(a + "<br><br");
+
+               //   var b = a.slice(1,4);
+               //   document.write(b + "<br><br");
+                a.splice(2, 1, "neha", "pinki");
+                document.write(a + "<br><br");
+               </script> 
+               <!-- is array() -->
+                <script>
+
+                  //  var a = ["sanjay","aman","rehman"];
+               //   document.write(a + "<br><br");
+                  
+               var a = ["sanjay","aman","rehman"];
+               // var a = 10;
+                  
+               //    var b = Array.isArray(a);
+               //  document.write(b + "<br><br");
+
+               if(Array.isArray(a)){
+                  document.write("This ia an Array");
+                 
+               }else{
+               document.write("This is not an Array");
+               }
+                </script>
+                <!-- indexof and lastindexof -->
+                 <script>
+                   var a = ["sanjay","aman","rehman","aman","rahul"];
+                    document.write(a + "<br><br>");
+                    var b = a.indexOf("aman",2);
+                    document.write(b + "<br><br>");
+
+                   var c = a.lastIndexOf("aman");
+                   document.write(c + "<br><br>");
+
+                   var d = a.includes("raha");
+                   document.write(d + "<br><br>");
+                 </script>
+                 <!-- some and every -->
+                  <script>
+                     var ages = [10,13,18,20];
+                     document.write(ages + "<br><br>");
+                     var b = ages.every(checkAdult)
+                     document.write(b + "<br><br>");
+
+                     function checkAdult(age){
+                        return age >= 18;
+
+                     }
+                  </script>
+                  <!-- find and findIndex -->
+                   <script>
+                      var ages = [10,23,18,20];
+                      document.write(ages + "<br><br>");
+                      var b = ages.findIndex(checkAdult);
+                      document.write(b + "<br><br>");
+                      function checkAdult(age){
+                        return age >= 18
+                      }
+                   </script>
+                   <!-- filter methods  -->
+                    <script>
+                     var ages = [23,5,18,20];
+                     document.write(ages + "<br><br>");
+                     
+                     var b = ages.filter(checkAdult)
+                     document.write(b + "<br><br>");
+
+                     function checkAdult(age){
+                        return age >= 18;
+                     }
+                    </script>
+                    <!-- toString ,valueof and fill methods -->
+                    <script>
+                      var a = ["sanjay","aman","rehman","karan"];
+                      a.toString();
+                      document.write(a + "<br><br>");
+                      a.fill("Ram");
+                      document.write(a)
+                      document.write("<br><br>");
+                    </script>
+                    <!-- forEach methods and forEachloop -->
+                     <script>
+                         var a = ["sanjay","aman","neha","karan"];
+                          document.write(a + "<br><br>");
+                         a.forEach(loop);
+
+                         function loop(value, index){
+                           document.write(index + " : " + value + "<br>");
+
+                         };
+                        
+
+                     </script>
+    </head>
+    <body>
+
+    </body>
+</html>

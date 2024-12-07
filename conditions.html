@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+    <script>
+     var x = 50;
+
+     console.time("test")
+      console.error("something not well");
+      console.warn("something not well");
+      console.table([1,2,3]);
+      console.warn("something not well");
+      console.error("something not well");
+      console.error("something not well");
+      console.timeEnd("test")
+      //console.clear();
+    
+    </script>
+    <script>
+        var x = 10;
+        var y = 20;
+        
+       // console.log(x>=y)
+       // console.log (10!=="10")
+       
+      if(x < y) {
+        document.write('x is greater');
+      }
+    </script>
+    <script>
+    var a = 10;
+    var b = 15;
+     console.log(a >= 8);
+    //     if(a >= 18 || b <= 20){
+    //     console.log("yes you are eligible")
+    // }
+    </script><br>
+    <script>
+       var x = 15; 
+
+       if( x > 30){
+        document.write("x is greater")
+       }else{
+        document.write("x is smaller")
+       }
+    </script><br>
+    <script>
+        var per = prompt("enter your percentage :");
+
+        if(per >= 80 && per <=100){
+            document.write("you are in merit");
+        }else if(per >= 60 && per <=80){
+            document.write("you are in Ist division");
+        }else if(per >= 45 && per <=60){
+            document.write("you are in IInd division");
+        }else if(per >= 33 && per <=45){
+            document.write("you are in IIIrd division");
+        }else if( per < 33){
+            document.write("you are in fail");
+        }else{
+            document.write("please enter valid percentage.")
+        } 
+    </script><br>
+    <script>
+        var a = 100;
+        var b;
+        //(a == 500)? b = "true": b = false;
+         b = " value is " + (a == 100 ? "true" : "false");
+        document.write(b)
+    </script><br>
+    <!-- switch statement -->
+    <script>
+        var day = 0;
+
+        switch(day){
+           case 0:
+                 document.write("today is monday");
+            break;
+            case 1:
+                document.write("today is tuesday");
+            break;
+            case 2:
+                 document.write("today is wednesday");
+            break;
+            case 3:
+                 document.write("today is thursday");
+            break;
+            case 4:
+                 document.write("today is friday");
+            break;
+            case 5:
+                 document.write("today is saturday");
+            break;
+            case 6:
+                  document.write("today is sunday");
+            break;
+
+            default:
+            document.write("enter the valid week day");
+        }
+    </script>
+    <!-- alert box -->
+      <script> 
+        var a = 40;
+        var b = 20;
+        if(a > b){
+            alert("value of A :" + a); 
+        }else{
+            alert("b is greater"); 
+        }
+     </script>
+     <!-- confirm box -->
+      <script>
+        var a = confirm("do you like our website ?");
+        if(a){
+           alert("thanks");
+        }else{
+            alert("sorry");
+        }
+      </script>
+      <!-- prompt box -->
+       <script>
+         var a = prompt("what is your name ?");
+        document.write(a);
+       </script>
+</head>
+<body>
+    <h1 id="main"> priya tanwar</h1>
+</body>
+</html>
+
+
+
+
+
+<!-- function findFrequency(a,size) {
+   
+    let ans = 0; 
+    for (let i = 0; i < size; i++) {
+        for (let j=i+1; j<size; j++){
+           if(a[i]==a[j]){
+             ans += 1;
+           }
+        }
+    // Only change code above this line
+    }
+    return ans;
+}
+
+findFrequency([2,4,2,6,3,6],6) -->
